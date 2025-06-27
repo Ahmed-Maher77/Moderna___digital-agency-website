@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Portfolio Details - Moderna</title>
+        <meta
+            name="description"
+            content="Detailed information about our portfolio projects. Learn about our web development, design, and digital marketing solutions."
+        />
+        <meta
+            name="keywords"
+            content="portfolio details, project case study, web development, design, digital marketing"
+        />
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Vendor CSS Files -->
+        <link
+            href="assets/vendor/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link
+            href="assets/vendor/glightbox/css/glightbox.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/vendor/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+    </head>
+
+    <body class="portfolio-details-page">
+        <header id="header" class="header d-flex align-items-center fixed-top">
+            <div
+                class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+            >
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">Moderna</h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#"
+                                ><span>Dropdown</span>
+                                <i
+                                    class="bi bi-chevron-down toggle-dropdown"
+                                ></i
+                            ></a>
+                            <ul>
+                                <li><a href="#">Dropdown 1</a></li>
+                                <li class="dropdown">
+                                    <a href="#"
+                                        ><span>Deep Dropdown</span>
+                                        <i
+                                            class="bi bi-chevron-down toggle-dropdown"
+                                        ></i
+                                    ></a>
+                                    <ul>
+                                        <li><a href="#">Deep Dropdown 1</a></li>
+                                        <li><a href="#">Deep Dropdown 2</a></li>
+                                        <li><a href="#">Deep Dropdown 3</a></li>
+                                        <li><a href="#">Deep Dropdown 4</a></li>
+                                        <li><a href="#">Deep Dropdown 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dropdown 2</a></li>
+                                <li><a href="#">Dropdown 3</a></li>
+                                <li><a href="#">Dropdown 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Page Title -->
+            <div class="page-title dark-background">
+                <div class="container position-relative">
+                    <h1 id="project-title">Portfolio Details</h1>
+                    <p id="project-subtitle">
+                        Detailed information about our portfolio projects and
+                        the solutions we've delivered.
+                    </p>
+                    <nav class="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="current" id="breadcrumb-current">
+                                Portfolio Details
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Portfolio Details Section -->
+            <section id="portfolio-details" class="portfolio-details section">
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row gy-4">
+                        <div class="col-lg-8">
+                            <div
+                                class="portfolio-details-slider swiper init-swiper"
+                            >
+                                <script
+                                    type="application/json"
+                                    class="swiper-config"
+                                >
+                                    {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                            "delay": 5000
+                                        },
+                                        "slidesPerView": "auto",
+                                        "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                        }
+                                    }
+                                </script>
+
+                                <div
+                                    class="swiper-wrapper align-items-center"
+                                    id="project-images"
+                                >
+                                    <!-- Images will be dynamically loaded here -->
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div
+                                class="portfolio-info"
+                                data-aos="fade-up"
+                                data-aos-delay="200"
+                            >
+                                <h3>Project information</h3>
+                                <ul id="project-info">
+                                    <!-- Project info will be dynamically loaded here -->
+                                </ul>
+                            </div>
+                            <div
+                                class="portfolio-description"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <h2 id="project-description-title">
+                                    Project Overview
+                                </h2>
+                                <p id="project-description">
+                                    <!-- Project description will be dynamically loaded here -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Portfolio Details Section -->
+        </main>
+
+        <footer id="footer" class="footer dark-background">
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-6">
+                            <h4>Join Our Newsletter</h4>
+                            <p>
+                                Subscribe to our newsletter and receive the
+                                latest news about our products and services!
+                            </p>
+                            <form
+                                action="forms/newsletter.php"
+                                method="post"
+                                class="php-email-form"
+                            >
+                                <div class="newsletter-form">
+                                    <input type="email" name="email" /><input
+                                        type="submit"
+                                        value="Subscribe"
+                                    />
+                                </div>
+                                <!-- <div class="loading">Loading</div> -->
+                                <div class="error-message"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <a href="index.html" class="d-flex align-items-center">
+                            <span class="sitename">Moderna</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>Egypt, Cairo</p>
+                            <p class="mt-3">
+                                <strong>Phone:</strong>
+                                <span>+20 1150 3834 16</span>
+                            </p>
+                            <p>
+                                <strong>Email:</strong>
+                                <span>ahmedmaher.dev1@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="terms.html">Terms of service</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="services.html">Web Development</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="services.html">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="services.html">UI/UX Design</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="services.html">Cloud Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <h4>Connect With Us</h4>
+                        <p>
+                            Follow us for updates, insights, and
+                            behind-the-scenes content.
+                        </p>
+                        <div class="social-links d-flex">
+                            <a
+                                href="https://ahmedmaher-portfolio.vercel.app/"
+                                target="_blank"
+                                title="My Portfolio"
+                                ><i class="bi bi-briefcase-fill"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/ahmed-maher-algohary"
+                                target="_blank"
+                                title="LinkedIn"
+                                ><i class="bi bi-linkedin"></i
+                            ></a>
+                            <a
+                                href="https://github.com/Ahmed-Maher77"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="bi bi-github"></i
+                            ></a>
+                            <a
+                                href="https://web.facebook.com/profile.php?id=100012154268952"
+                                target="_blank"
+                                title="Facebook"
+                                ><i class="bi bi-facebook"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container copyright text-center mt-4">
+                <p>
+                    © <span>Copyright</span>
+                    <strong class="px-1 sitename" id="current-year"></strong>
+                    <span>All Rights Reserved</span>
+                </p>
+                <div class="credits">
+                    Designed and Developed by
+                    <a
+                        style="font-weight: 500; font-size: 0.9rem"
+                        href="https://ahmedmaher-portfolio.vercel.app/"
+                        title="Ahmed Maher's Portfolio"
+                        target="_blank"
+                        >Ahmed Maher</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll Top -->
+        <a
+            href="#"
+            id="scroll-top"
+            class="scroll-top d-flex align-items-center justify-content-center"
+            ><i class="bi bi-arrow-up-short"></i
+        ></a>
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <!-- Newsletter Success Popup Modal HTML -->
+        <div id="newsletter-success-modal" class="newsletter-modal">
+            <div class="newsletter-modal-content">
+                <span class="newsletter-modal-close" id="newsletter-modal-close"
+                    >&times;</span
+                >
+                <div class="newsletter-modal-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <h4>Success!</h4>
+                <p>Your subscription request has been sent. Thank you!</p>
+            </div>
+        </div>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Portfolio Details Dynamic Content Script -->
+        <script>
+            // Portfolio projects data
+            const portfolioProjects = {
+                "ecommerce-platform": {
+                    title: "E-commerce Platform",
+                    subtitle:
+                        "Full-stack React e-commerce solution with payment integration",
+                    category: "Web Development",
+                    client: "Ahmed Maher",
+                    date: "December 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "A comprehensive e-commerce platform built with React and Node.js. Features include user authentication, product catalog, shopping cart, payment processing with Stripe integration, order management, and admin dashboard. The platform is fully responsive and optimized for performance.",
+                    images: [
+                        "assets/img/portfolio/app-1.jpg",
+                        "assets/img/portfolio/product-1.jpg",
+                        "assets/img/portfolio/branding-1.jpg",
+                    ],
+                    technologies: [
+                        "React",
+                        "Node.js",
+                        "MongoDB",
+                        "Stripe API",
+                        "Redux",
+                    ],
+                },
+                "online-store": {
+                    title: "Online Store",
+                    subtitle:
+                        "WooCommerce-based online store with custom theme design",
+                    category: "E-commerce",
+                    client: "Ahmed Maher",
+                    date: "November 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Custom WooCommerce online store with bespoke theme design. Includes product filtering, wishlist functionality, customer reviews, and integrated payment gateways. The design focuses on user experience and conversion optimization.",
+                    images: [
+                        "assets/img/portfolio/product-1.jpg",
+                        "assets/img/portfolio/app-1.jpg",
+                        "assets/img/portfolio/branding-2.jpg",
+                    ],
+                    technologies: [
+                        "WordPress",
+                        "WooCommerce",
+                        "PHP",
+                        "MySQL",
+                        "CSS3",
+                    ],
+                },
+                "corporate-branding": {
+                    title: "Corporate Branding",
+                    subtitle: "Complete brand identity design for tech startup",
+                    category: "Branding",
+                    client: "Ahmed Maher",
+                    date: "October 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Complete brand identity package including logo design, color palette, typography guidelines, business cards, letterheads, and digital assets. The branding reflects the company's innovative approach and professional image.",
+                    images: [
+                        "assets/img/portfolio/branding-1.jpg",
+                        "assets/img/portfolio/branding-2.jpg",
+                        "assets/img/portfolio/branding-3.jpg",
+                    ],
+                    technologies: [
+                        "Adobe Illustrator",
+                        "Adobe Photoshop",
+                        "Brand Guidelines",
+                    ],
+                },
+                "mobile-app": {
+                    title: "Mobile App",
+                    subtitle:
+                        "React Native mobile application for food delivery service",
+                    category: "Mobile Development",
+                    client: "Ahmed Maher",
+                    date: "September 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Cross-platform mobile application for food delivery service. Features include user registration, restaurant browsing, order placement, real-time tracking, payment processing, and push notifications.",
+                    images: [
+                        "assets/img/portfolio/books-1.jpg",
+                        "assets/img/portfolio/app-2.jpg",
+                        "assets/img/portfolio/product-2.jpg",
+                    ],
+                    technologies: [
+                        "React Native",
+                        "Firebase",
+                        "Google Maps API",
+                        "Stripe",
+                    ],
+                },
+                "crm-system": {
+                    title: "CRM System",
+                    subtitle:
+                        "Custom CRM platform built with Node.js and React",
+                    category: "Web Development",
+                    client: "Ahmed Maher",
+                    date: "August 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Comprehensive Customer Relationship Management system with lead management, contact tracking, sales pipeline, reporting dashboard, and email integration. Built for scalability and ease of use.",
+                    images: [
+                        "assets/img/portfolio/app-2.jpg",
+                        "assets/img/portfolio/app-3.jpg",
+                        "assets/img/portfolio/product-3.jpg",
+                    ],
+                    technologies: [
+                        "React",
+                        "Node.js",
+                        "PostgreSQL",
+                        "Socket.io",
+                        "Chart.js",
+                    ],
+                },
+                "digital-marketplace": {
+                    title: "Digital Marketplace",
+                    subtitle:
+                        "Multi-vendor marketplace platform with advanced features",
+                    category: "E-commerce",
+                    client: "Ahmed Maher",
+                    date: "July 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Multi-vendor marketplace platform allowing multiple sellers to list and sell products. Features include vendor management, commission tracking, dispute resolution, and advanced search functionality.",
+                    images: [
+                        "assets/img/portfolio/product-2.jpg",
+                        "assets/img/portfolio/app-1.jpg",
+                        "assets/img/portfolio/branding-1.jpg",
+                    ],
+                    technologies: [
+                        "Laravel",
+                        "Vue.js",
+                        "MySQL",
+                        "Redis",
+                        "AWS S3",
+                    ],
+                },
+                "logo-design": {
+                    title: "Logo Design",
+                    subtitle: "Professional logo design and brand guidelines",
+                    category: "Branding",
+                    client: "Ahmed Maher",
+                    date: "June 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Professional logo design with comprehensive brand guidelines. Includes logo variations, color specifications, typography rules, and usage examples for both print and digital applications.",
+                    images: [
+                        "assets/img/portfolio/branding-2.jpg",
+                        "assets/img/portfolio/branding-1.jpg",
+                        "assets/img/portfolio/branding-3.jpg",
+                    ],
+                    technologies: [
+                        "Adobe Illustrator",
+                        "Adobe Photoshop",
+                        "Brand Guidelines",
+                    ],
+                },
+                "fitness-app": {
+                    title: "Fitness App",
+                    subtitle:
+                        "Cross-platform fitness tracking mobile application",
+                    category: "Mobile Development",
+                    client: "Ahmed Maher",
+                    date: "May 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Comprehensive fitness tracking application with workout planning, progress monitoring, nutrition tracking, and social features. Includes integration with wearable devices and health apps.",
+                    images: [
+                        "assets/img/portfolio/books-2.jpg",
+                        "assets/img/portfolio/app-3.jpg",
+                        "assets/img/portfolio/product-1.jpg",
+                    ],
+                    technologies: [
+                        "React Native",
+                        "Firebase",
+                        "HealthKit",
+                        "Google Fit API",
+                    ],
+                },
+                "dashboard-system": {
+                    title: "Dashboard System",
+                    subtitle:
+                        "Analytics dashboard with real-time data visualization",
+                    category: "Web Development",
+                    client: "Ahmed Maher",
+                    date: "April 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Real-time analytics dashboard with interactive charts, data filtering, export capabilities, and customizable widgets. Provides insights into business performance and key metrics.",
+                    images: [
+                        "assets/img/portfolio/app-3.jpg",
+                        "assets/img/portfolio/app-2.jpg",
+                        "assets/img/portfolio/product-2.jpg",
+                    ],
+                    technologies: [
+                        "React",
+                        "D3.js",
+                        "Node.js",
+                        "MongoDB",
+                        "WebSocket",
+                    ],
+                },
+                "subscription-platform": {
+                    title: "Subscription Platform",
+                    subtitle:
+                        "SaaS subscription management platform with billing integration",
+                    category: "E-commerce",
+                    client: "Ahmed Maher",
+                    date: "March 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Complete SaaS subscription management platform with billing, user management, feature access control, and analytics. Supports multiple pricing tiers and payment methods.",
+                    images: [
+                        "assets/img/portfolio/product-3.jpg",
+                        "assets/img/portfolio/app-1.jpg",
+                        "assets/img/portfolio/branding-2.jpg",
+                    ],
+                    technologies: [
+                        "Laravel",
+                        "Vue.js",
+                        "Stripe",
+                        "MySQL",
+                        "Redis",
+                    ],
+                },
+                "marketing-campaign": {
+                    title: "Marketing Campaign",
+                    subtitle:
+                        "Complete digital marketing campaign with social media strategy",
+                    category: "Digital Marketing",
+                    client: "Ahmed Maher",
+                    date: "February 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Comprehensive digital marketing campaign including social media management, content creation, PPC advertising, email marketing, and performance tracking. Increased client engagement by 300%.",
+                    images: [
+                        "assets/img/portfolio/branding-3.jpg",
+                        "assets/img/portfolio/branding-1.jpg",
+                        "assets/img/portfolio/product-3.jpg",
+                    ],
+                    technologies: [
+                        "Google Ads",
+                        "Facebook Ads",
+                        "Mailchimp",
+                        "Analytics",
+                    ],
+                },
+                "educational-app": {
+                    title: "Educational App",
+                    subtitle:
+                        "Interactive learning platform for online education",
+                    category: "Mobile Development",
+                    client: "Ahmed Maher",
+                    date: "January 2023",
+                    url: "https://ahmedmaher-portfolio.vercel.app/",
+                    description:
+                        "Interactive educational platform with video lessons, quizzes, progress tracking, and gamification elements. Supports multiple learning paths and adaptive content delivery.",
+                    images: [
+                        "assets/img/portfolio/books-3.jpg",
+                        "assets/img/portfolio/app-2.jpg",
+                        "assets/img/portfolio/product-1.jpg",
+                    ],
+                    technologies: [
+                        "React Native",
+                        "Firebase",
+                        "Video Streaming",
+                        "MongoDB",
+                    ],
+                },
+            };
+
+            // Function to get URL parameters
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+                var results = regex.exec(location.search);
+                return results === null
+                    ? ""
+                    : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+
+            // Function to load project content
+            function loadProjectContent() {
+                const projectId = getUrlParameter("project");
+                const project = portfolioProjects[projectId];
+
+                if (!project) {
+                    // Default content if no project found
+                    document.getElementById("project-title").textContent =
+                        "Portfolio Details";
+                    document.getElementById("project-subtitle").textContent =
+                        "Detailed information about our portfolio projects and the solutions we've delivered.";
+                    document.getElementById("breadcrumb-current").textContent =
+                        "Portfolio Details";
+                    return;
+                }
+
+                // Update page title and meta
+                document.title = `${project.title} - Portfolio Details - Moderna`;
+                document.getElementById("project-title").textContent =
+                    project.title;
+                document.getElementById("project-subtitle").textContent =
+                    project.subtitle;
+                document.getElementById("breadcrumb-current").textContent =
+                    project.title;
+
+                // Update project info
+                const projectInfo = document.getElementById("project-info");
+                projectInfo.innerHTML = `
+        <li><strong>Category</strong>: ${project.category}</li>
+        <li><strong>Client</strong>: ${project.client}</li>
+        <li><strong>Project date</strong>: ${project.date}</li>
+        <li><strong>Project URL</strong>: <a href="${
+            project.url
+        }" target="_blank">${project.url}</a></li>
+        <li><strong>Technologies</strong>: ${project.technologies.join(
+            ", "
+        )}</li>
+      `;
+
+                // Update project description
+                document.getElementById(
+                    "project-description-title"
+                ).textContent = project.title;
+                document.getElementById("project-description").textContent =
+                    project.description;
+
+                // Update project images
+                const projectImages = document.getElementById("project-images");
+                projectImages.innerHTML = "";
+                project.images.forEach((image) => {
+                    projectImages.innerHTML += `
+          <div class="swiper-slide">
+            <img src="${image}" alt="${project.title}" class="img-fluid">
+          </div>
+        `;
+                });
+
+                // Reinitialize Swiper if it exists
+                if (typeof Swiper !== "undefined") {
+                    const swiper = new Swiper(".portfolio-details-slider", {
+                        loop: true,
+                        speed: 600,
+                        autoplay: {
+                            delay: 5000,
+                        },
+                        slidesPerView: "auto",
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "bullets",
+                            clickable: true,
+                        },
+                    });
+                }
+            }
+
+            // Load content when page loads
+            document.addEventListener("DOMContentLoaded", function () {
+                loadProjectContent();
+            });
+        </script>
+    </body>
+</html>
